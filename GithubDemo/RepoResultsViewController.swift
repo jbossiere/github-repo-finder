@@ -73,7 +73,7 @@ class RepoResultsViewController: UIViewController, UITableViewDelegate, UITableV
         let cell = tableView.dequeueReusableCell(withIdentifier: "RepoCell", for: indexPath) as! RepoCell
         
         cell.repo = repos[indexPath.row]
-        cell.nameLabel.text = cell.repo.name
+        
         return cell
     }
 }
