@@ -128,7 +128,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="x5q-EH-pP8">
-                        <barButtonItem key="rightBarButtonItem" title="Settings" id="5gR-n8-9N3">
+                        <barButtonItem key="rightBarButtonItem" title="Filters" id="5gR-n8-9N3">
                             <connections>
                                 <segue destination="3Tw-cj-2jh" kind="presentation" id="CW2-68-ECq"/>
                             </connections>
@@ -142,7 +142,7 @@
             </objects>
             <point key="canvasLocation" x="816.79999999999995" y="-559.07046476761627"/>
         </scene>
-        <!--Settings-->
+        <!--Filters-->
         <scene sceneID="95E-Jk-lBc">
             <objects>
                 <viewController id="qe0-QF-hDz" customClass="SettingsViewController" customModule="GithubDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -154,7 +154,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="500000" translatesAutoresizingMaskIntoConstraints="NO" id="Zbk-ci-H5a">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100000" translatesAutoresizingMaskIntoConstraints="NO" id="Zbk-ci-H5a">
                                 <rect key="frame" x="98" y="107" width="184" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
@@ -178,15 +178,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Settings" id="DKd-ga-VNj">
+                    <navigationItem key="navigationItem" title="Filters" id="DKd-ga-VNj">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="E3A-8g-GjS">
                             <connections>
                                 <action selector="onCancel:" destination="qe0-QF-hDz" id="Vql-OW-gK1"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="Fx5-yB-aMH">
+                        <barButtonItem key="rightBarButtonItem" title="Filter" id="Fx5-yB-aMH">
                             <connections>
-                                <action selector="onCancel:" destination="qe0-QF-hDz" id="8A9-yI-uNL"/>
+                                <action selector="onSave:" destination="qe0-QF-hDz" id="LtQ-47-HTC"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
